@@ -5,7 +5,7 @@ format long g
     % predict net
     Input_case_study=[FD;FM;Mw;RJB;VS30];
     % Inputs are normalized using the following equation: 0.60*(xi-xmin)/(xmax-xmin)+0.20;
-        Inputs_case_study_NML= 0.60*( (Input_case_study-Param_Min)./ (Param_Max-Param_Min) ) + 0.2
+        Inputs_case_study_NML= 0.60*( (Input_case_study-Param_Min)./ (Param_Max-Param_Min) ) + 0.2;
     
     Num_Fold=10;
     % Outputs_Mean_case_study = zeros(size(Target_case_study));
@@ -72,4 +72,5 @@ uieditfield(fig, 'numeric', 'Position', [325 440 50 20], 'Value', PSa_10sec);
 
 
 end
+
 
